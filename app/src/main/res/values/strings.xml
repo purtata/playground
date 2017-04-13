@@ -2,5 +2,8 @@
     <string name="app_name">ExtraTask1</string>
     <string name="nr_of_views">Number of views</string>
     <string name="nr_hint">number</string>
+    <string name="zero">0</string>
     <string name="button_start">Generate</string>
+    <string name="button_clear">Clear</string>
+    <string name="radio_button_label">Radio button </string>
 </resources>
