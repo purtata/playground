@@ -1,7 +1,7 @@
 package com.example.piotrkrz.kszyhuextratask1;
 
 import android.content.Context;
-import android.view.ViewGroup;
+import android.support.v7.widget.RecyclerView;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -12,8 +12,8 @@ import android.widget.EditText;
 public class ListWithRadioState implements AppState {
 
     @Override
-    public AppState stateUpdate(Context context, EditText editText, ViewGroup viewGroup, Button button) {
-        viewGroup.removeAllViews();
+    public AppState stateUpdate(Context context, EditText editText, RecyclerView view, Button button) {
+        view.setAdapter(null);
         editText.setText(context.getResources().getString(R.string.zero));
         button.setText(context.getResources().getString(R.string.button_start));
         return new BeginState();

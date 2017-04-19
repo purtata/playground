@@ -1,6 +1,7 @@
 package com.example.piotrkrz.kszyhuextratask1;
 
 import android.content.Context;
+import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,5 +11,5 @@ import android.widget.EditText;
  */
 
 public interface AppState {
-    AppState stateUpdate(Context context, EditText editText, ViewGroup viewGroup, Button button);
+    AppState stateUpdate(Context context, EditText editText, RecyclerView view, Button button);
 }
